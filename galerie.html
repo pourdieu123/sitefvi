@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Femme de Valeur International</title>
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+ 
+    <!-- CSS spécifique pour la galerie -->
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <div class="logo-image-wrapper">
+                        <img src="assets/images/logo.jpeg" alt="Femme de Valeur International" class="logo-img">
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Femme de Valeur</span>
+                        <span class="logo-subtitle">International</span>
+                    </div>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Activités <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="activites.html#evenements" class="dropdown-link">Événements</a></li>
+                            <li><a href="activites.html#projets-en-cours" class="dropdown-link">Projets en cours</a></li>
+                            <li><a href="activites.html#realisations" class="dropdown-link">Réalisations</a></li>
+                            <li><a href="activites.html" class="dropdown-link">Toutes les activités</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="membres.html" class="nav-link">Membres</a></li>
+                    <li><a href="galerie.html" class="nav-link active">Galerie</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Galerie</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Accueil</a> / <span>Galerie</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtres avec compteurs -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-wrapper">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Toutes <span class="count">24</span></button>
+                    <button class="filter-btn" data-filter="conferences">Conférences <span class="count">8</span></button>
+                    <button class="filter-btn" data-filter="retraites">Retraites <span class="count">6</span></button>
+                    <button class="filter-btn" data-filter="entraide">Entraide <span class="count">5</span></button>
+                    <button class="filter-btn" data-filter="antennes">Antennes <span class="count">5</span></button>
+                </div>
+                <div class="filter-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher dans la galerie...">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galerie principale -->
+    <section class="gallery-main">
+        <div class="container">
+            <!-- Grille de la galerie -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Image 1 - Conférences -->
+                <div class="gallery-item" data-category="conferences">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1527529482831-cde6e14c0b28?w=600&auto=format" alt="Conférence femmes">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Conférences</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Conférence Annuelle 2025</h3>
+                        <p><i class="far fa-calendar-alt"></i> 15 Mars 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Palais des Congrès, Cotonou</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 234</span>
+                            <span class="likes"><i class="far fa-heart"></i> 45</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 2 - Retraites -->
+                <div class="gallery-item" data-category="retraites">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1551836022-4c4c79ecde24?w=600&auto=format" alt="Retraite spirituelle">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Retraites</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Retraite & Prière</h3>
+                        <p><i class="far fa-calendar-alt"></i> 10-12 Avril 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Centre spirituel, Grand-Popo</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 189</span>
+                            <span class="likes"><i class="far fa-heart"></i> 32</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 3 - Entraide -->
+                <div class="gallery-item" data-category="entraide">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&auto=format" alt="Entraide humanitaire">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Entraide</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Action solidarité</h3>
+                        <p><i class="far fa-calendar-alt"></i> 22 Mai 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Orphelinat d'Akpakpa</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 156</span>
+                            <span class="likes"><i class="far fa-heart"></i> 67</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 4 - Antennes -->
+                <div class="gallery-item" data-category="antennes">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=600&auto=format" alt="Antenne locale">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Antennes</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Antenne d'Akpakpa</h3>
+                        <p><i class="far fa-calendar-alt"></i> Réunion mensuelle</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Centre FVI, Akpakpa</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 98</span>
+                            <span class="likes"><i class="far fa-heart"></i> 23</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 5 - Conférences -->
+                <div class="gallery-item" data-category="conferences">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1469571486292-b536b1044c6a?w=600&auto=format" alt="Atelier leadership">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Conférences</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Atelier leadership</h3>
+                        <p><i class="far fa-calendar-alt"></i> 5 Juin 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Centre FVI</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 145</span>
+                            <span class="likes"><i class="far fa-heart"></i> 28</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 6 - Retraites -->
+                <div class="gallery-item" data-category="retraites">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1543269664-7eef42226a21?w=600&auto=format" alt="Groupe de prière">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Retraites</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Petits groupes</h3>
+                        <p><i class="far fa-calendar-alt"></i> Hebdomadaire</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Plusieurs lieux</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 267</span>
+                            <span class="likes"><i class="far fa-heart"></i> 89</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 7 - Entraide -->
+                <div class="gallery-item" data-category="entraide">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=600&auto=format" alt="Remise de dons">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Entraide</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Aide aux chômeuses</h3>
+                        <p><i class="far fa-calendar-alt"></i> 12 Juillet 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Mairie de Cotonou</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 178</span>
+                            <span class="likes"><i class="far fa-heart"></i> 56</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image 8 - Antennes -->
+                <div class="gallery-item" data-category="antennes">
+                    <div class="gallery-image-wrapper">
+                        <img class="gallery-image" src="https://images.unsplash.com/photo-1529333320936-e2193f4e3b32?w=600&auto=format" alt="Célébration">
+                        <div class="image-overlay">
+                            <i class="fas fa-expand-alt"></i>
+                        </div>
+                        <span class="gallery-category">Antennes</span>
+                    </div>
+                    <div class="gallery-caption">
+                        <h3>Jubilé des membres</h3>
+                        <p><i class="far fa-calendar-alt"></i> 30 Août 2025</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Siège FVI</p>
+                        <div class="caption-footer">
+                            <span class="views"><i class="far fa-eye"></i> 203</span>
+                            <span class="likes"><i class="far fa-heart"></i> 71</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistiques de la galerie -->
+            <div class="gallery-stats">
+                <div class="stat-item">
+                    <span class="stat-number">24</span>
+                    <span class="stat-label">Événements</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1,247</span>
+                    <span class="stat-label">Photos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15</span>
+                    <span class="stat-label">Antennes</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Membres</span>
+                </div>
+            </div>
+
+            <!-- Section Valeurs -->
+            <div class="gallery-values">
+                <h2 class="values-title">Nos valeurs</h2>
+                <div class="values-grid">
+                    <span class="value-tag">Foi</span>
+                    <span class="value-tag">Intégrité</span>
+                    <span class="value-tag">Service</span>
+                    <span class="value-tag">Compassion</span>
+                    <span class="value-tag">Excellence</span>
+                    <span class="value-tag">Union</span>
+                    <span class="value-tag">Partage</span>
+                    <span class="value-tag">Espérance</span>
+                </div>
+            </div>
+
+            <!-- Association brand -->
+            <div class="association-brand">
+                <span>FEMME DE VALEUR INTERNATIONAL ✦ Cotonou</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox (modal pour agrandir les images) -->
+    <div class="gallery-lightbox" id="galleryLightbox">
+        <button class="lightbox-close">&times;</button>
+        <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <div class="lightbox-caption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <div class="logo-image-wrapper">
+                            <img src="assets/images/logo.jpeg" alt="Femme de Valeur International" class="logo-img">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-subtitle">Femme de Valeur <br>International</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">Association qui œuvre pour l'épanouissement intégral de la femme selon les valeurs chrétiennes.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="far fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Liens rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="apropos.html">À propos</a></li>
+                        <li><a href="activites.html">Activités</a></li>
+                        <li><a href="membres.html">Membres</a></li>
+                        <li><a href="galerie.html">Galerie</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact rapide</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+229 01 96 19 06 81</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span>associationfvi@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Réunion: 2e mercredi du mois</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p style="color: var(--gray); margin-bottom: 15px;">Recevez nos actualités</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" class="newsletter-input">
+                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Femme de Valeur International. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Menu toggle pour mobile
+        document.getElementById('menuToggle')?.addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu')?.classList.toggle('active');
+        });
+
+        // Filtres de la galerie
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Enlever la classe active de tous les boutons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Ajouter la classe active au bouton cliqué
+                this.classList.add('active');
+                
+                const filterValue = this.getAttribute('data-filter');
+                
+                galleryItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Lightbox
+        const lightbox = document.getElementById('galleryLightbox');
+        const lightboxImg = lightbox.querySelector('img');
+        const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+        const closeBtn = lightbox.querySelector('.lightbox-close');
+        const prevBtn = lightbox.querySelector('.prev');
+        const nextBtn = lightbox.querySelector('.next');
+        
+        let currentIndex = 0;
+        const images = [];
+        
+        // Récupérer toutes les images de la galerie
+        document.querySelectorAll('.gallery-item').forEach((item, index) => {
+            const img = item.querySelector('.gallery-image');
+            const title = item.querySelector('h3')?.textContent || '';
+            const desc = item.querySelectorAll('p')[0]?.textContent || '';
+            const location = item.querySelectorAll('p')[1]?.textContent || '';
+            
+            images.push({
+                src: img.src,
+                title: title,
+                desc: desc,
+                location: location
+            });
+            
+            // Ouvrir lightbox au clic sur l'image
+            item.addEventListener('click', () => {
+                currentIndex = index;
+                updateLightbox();
+                lightbox.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+        
+        function updateLightbox() {
+            const img = images[currentIndex];
+            lightboxImg.src = img.src;
+            lightboxCaption.innerHTML = `<strong>${img.title}</strong> - ${img.desc} ${img.location}`;
+        }
+        
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            updateLightbox();
+        }
+        
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            updateLightbox();
+        }
+        
+        closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+        
+        nextBtn.addEventListener('click', nextImage);
+        prevBtn.addEventListener('click', prevImage);
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+        
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = '';
+            } else if (e.key === 'ArrowRight') {
+                nextImage();
+            } else if (e.key === 'ArrowLeft') {
+                prevImage();
+            }
+        });
+
+        // Recherche simple
+        const searchInput = document.querySelector('.filter-search input');
+        if (searchInput) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+                
+                galleryItems.forEach(item => {
+                    const title = item.querySelector('h3')?.textContent.toLowerCase() || '';
+                    const desc = item.querySelectorAll('p')[0]?.textContent.toLowerCase() || '';
+                    
+                    if (title.includes(searchTerm) || desc.includes(searchTerm)) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'scale(0.8)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
