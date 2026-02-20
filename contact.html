@@ -25,7 +25,7 @@
         <span class="logo-subtitle">International</span>
     </div>
 </a>
-                <button class="menu-toggle" id="menuToggle">
+                <button  aria-label="menu" class="menu-toggle" id="menuToggle">
                     <span class="hamburger"></span>
                 </button>
                 
@@ -119,12 +119,12 @@
                     <form id="contactForm" class="contact-form">
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="name">Nom complet <span class="required">*</span></label>
+                                <label for="name">Nom  <span class="required">*</span></label>
                                 <input type="text" id="name" name="name" placeholder="Votre nom" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" placeholder="votre.email@exemple.com" required>
+                                <label for="name">Prénom(s) <span class="required">*</span></label>
+                                <input type="text" id="name" name="surname" placeholder="votre.email@exemple.com" required>
                             </div>
                         </div>
                         
@@ -215,12 +215,7 @@
                     <span>WhatsApp</span>
                     <span class="social-handle">Groupe FVI</span>
                 </a>
-                
-                <a href="#" class="social-item telegram">
-                    <i class="fab fa-telegram-plane"></i>
-                    <span>Télégram</span>
-                    <span class="social-handle">Canal FVI</span>
-                </a>
+        
             </div>
         </div>
     </section>
@@ -259,6 +254,7 @@
                     <p>Les membres à jour de leurs cotisations peuvent bénéficier :</p>
                     <ul>
                         <li>D'un accompagnement moral et solidaire au sein de l'association</li>
+                        <li>D'une réduction de la participation aux événements de Femme de Valeur International</li>
                         <li>D'un soutien financier de <strong>20 000 FCFA</strong> en cas d'événements familiaux majeurs :
                             <ul>
                                 <li>Mariage</li>
@@ -266,6 +262,7 @@
                                 <li>Décès d'un proche</li>
                             </ul>
                         </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -389,9 +386,6 @@
             </div>
         </div>
         
-        <div class="faq-more">
-            <a href="documents.html" class="btn btn-outline">Consulter tous les documents</a>
-        </div>
     </div>
 </section>
 
@@ -400,7 +394,7 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Prête à faire la différence ?</h2>
-                <p>Rejoignez un réseau de femmes fortes et spirituelles qui œuvrent pour l'épanouissement de la femme selon les valeurs chrétiennes.</p>
+                <p>Rejoignez un réseau de femmes fortes et équilibrées, engagées pour l’épanouissement de la femme.</p>
                 <div class="cta-buttons">
                     <a href="membres.html" class="btn btn-light">Devenir membre</a>
                     <a href="#contactForm" class="btn btn-outline-light">Nous écrire</a>
@@ -409,6 +403,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -419,10 +414,10 @@
                             <img src="assets/images/logo.jpeg" alt="Femme de Valeur International" class="logo-img">
                         </div>
                         <div class="logo-text">
-                                 <span class="logo-subtitle">Femme de Valeur <br>International</span>
-                         </div>
+                            <span class="logo-subtitle">Femme de Valeur <br>International</span>
+                        </div>
                     </div>
-                    <p class="footer-description">Association qui œuvre pour l'épanouissement intégral de la femme selon les valeurs chrétiennes.</p>
+                    <p class="footer-description">Association qui œuvre pour l'épanouissement intégral de la femme.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -443,8 +438,22 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Contact rapide</h3>
+                    <h3 class="footer-title">Activités</h3>
+                    <ul class="footer-links">
+                        <li><a href="#evenements" class="section-link" data-section="evenements">Événements</a></li>
+                        <li><a href="#projets-en-cours" class="section-link" data-section="projets-en-cours">Projets en cours</a></li>
+                        <li><a href="#realisations" class="section-link" data-section="realisations">Réalisations</a></li>
+                        <li><a href="reglement.html">Règlement intérieur</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
                     <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Commune de Cotonou, 2ème Arrondissement, Quartier Ayélawadjè 1 (Akpakpa), Carré N° 221</span>
+                        </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <span>+229 01 96 19 06 81</span>
@@ -453,20 +462,7 @@
                             <i class="far fa-envelope"></i>
                             <span>associationfvi@gmail.com</span>
                         </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Réunion: 2e mercredi du mois</span>
-                        </li>
                     </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Newsletter</h3>
-                    <p style="color: var(--gray); margin-bottom: 15px;">Recevez nos actualités</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre email" class="newsletter-input">
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
                 </div>
             </div>
             
@@ -479,6 +475,7 @@
             </div>
         </div>
     </footer>
+
 
     <script src="script1.js"></script>
 </body>

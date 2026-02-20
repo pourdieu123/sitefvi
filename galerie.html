@@ -26,7 +26,7 @@
                         <span class="logo-subtitle">International</span>
                     </div>
                 </a>
-                <button class="menu-toggle" id="menuToggle">
+                <button aria-label="menu" class="menu-toggle" id="menuToggle">
                     <span class="hamburger"></span>
                 </button>
                 
@@ -245,53 +245,18 @@
                 </div>
             </div>
 
-            <!-- Statistiques de la galerie -->
-            <div class="gallery-stats">
-                <div class="stat-item">
-                    <span class="stat-number">24</span>
-                    <span class="stat-label">Événements</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">1,247</span>
-                    <span class="stat-label">Photos</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">15</span>
-                    <span class="stat-label">Antennes</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Membres</span>
-                </div>
+
             </div>
 
-            <!-- Section Valeurs -->
-            <div class="gallery-values">
-                <h2 class="values-title">Nos valeurs</h2>
-                <div class="values-grid">
-                    <span class="value-tag">Foi</span>
-                    <span class="value-tag">Intégrité</span>
-                    <span class="value-tag">Service</span>
-                    <span class="value-tag">Compassion</span>
-                    <span class="value-tag">Excellence</span>
-                    <span class="value-tag">Union</span>
-                    <span class="value-tag">Partage</span>
-                    <span class="value-tag">Espérance</span>
-                </div>
-            </div>
-
-            <!-- Association brand -->
-            <div class="association-brand">
-                <span>FEMME DE VALEUR INTERNATIONAL ✦ Cotonou</span>
-            </div>
+          
         </div>
     </section>
 
     <!-- Lightbox (modal pour agrandir les images) -->
     <div class="gallery-lightbox" id="galleryLightbox">
         <button class="lightbox-close">&times;</button>
-        <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
-        <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+        <button aria-label="direction" class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+        <button  aria-label="direction" class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
         <div class="lightbox-content">
             <img src="" alt="">
             <div class="lightbox-caption"></div>
@@ -299,19 +264,20 @@
     </div>
 
     <!-- Footer -->
+   <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <div class="logo-image-wrapper">
+                          <div class="logo-image-wrapper">
                             <img src="assets/images/logo.jpeg" alt="Femme de Valeur International" class="logo-img">
                         </div>
                         <div class="logo-text">
                             <span class="logo-subtitle">Femme de Valeur <br>International</span>
                         </div>
                     </div>
-                    <p class="footer-description">Association qui œuvre pour l'épanouissement intégral de la femme selon les valeurs chrétiennes.</p>
+                    <p class="footer-description">Association qui œuvre pour l'épanouissement intégral de la femme.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -332,8 +298,22 @@
                 </div>
                 
                 <div class="footer-col">
-                    <h3 class="footer-title">Contact rapide</h3>
+                    <h3 class="footer-title">Activités</h3>
+                    <ul class="footer-links">
+                        <li><a href="#evenements" class="section-link" data-section="evenements">Événements</a></li>
+                        <li><a href="#projets-en-cours" class="section-link" data-section="projets-en-cours">Projets en cours</a></li>
+                        <li><a href="#realisations" class="section-link" data-section="realisations">Réalisations</a></li>
+                        <li><a href="reglement.html">Règlement intérieur</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Contact</h3>
                     <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Commune de Cotonou, 2ème Arrondissement, Quartier Ayélawadjè 1 (Akpakpa), Carré N° 221</span>
+                        </li>
                         <li>
                             <i class="fas fa-phone"></i>
                             <span>+229 01 96 19 06 81</span>
@@ -342,20 +322,7 @@
                             <i class="far fa-envelope"></i>
                             <span>associationfvi@gmail.com</span>
                         </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Réunion: 2e mercredi du mois</span>
-                        </li>
                     </ul>
-                </div>
-                
-                <div class="footer-col">
-                    <h3 class="footer-title">Newsletter</h3>
-                    <p style="color: var(--gray); margin-bottom: 15px;">Recevez nos actualités</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Votre email" class="newsletter-input">
-                        <button type="submit" class="newsletter-btn"><i class="fas fa-paper-plane"></i></button>
-                    </form>
                 </div>
             </div>
             
@@ -368,6 +335,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Scripts -->
     <script>
