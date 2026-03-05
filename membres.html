@@ -403,8 +403,14 @@ url('assets/images/membres.png') no-repeat top center;
             </div>
         </div>
     </footer>
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navMenu = document.querySelector(".nav-menu");
 
-    <script src="js/utils.js"></script>
-    <script src="js/main.js"></script>
+menuToggle.addEventListener("click", () => {
+    menuToggle.classList.toggle("active");
+    navMenu.classList.toggle("active");
+});
+</script>
 </body>
 </html>

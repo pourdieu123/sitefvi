@@ -310,13 +310,16 @@ img {
     position: relative;
 }
 
-.hamburger, .hamburger::before, .hamburger::after {
+.hamburger,
+.hamburger::before,
+.hamburger::after {
     position: absolute;
     width: 100%;
     height: 3px;
     background-color: var(--dark-color);
     border-radius: 3px;
     transition: var(--transition);
+    left: 0;
 }
 
 .hamburger {
@@ -331,9 +334,8 @@ img {
 
 .hamburger::after {
     content: '';
-    bottom: -8px;
+    top: 8px;
 }
-
 .menu-toggle.active .hamburger {
     background-color: transparent;
 }
